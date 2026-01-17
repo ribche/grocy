@@ -1,0 +1,2 @@
+2026/01/16 20:57:41 [error] 284#284: *1 directory index of "/app/www/public/" is forbidden, client: 192.168.65.1, server: _, request: "GET / HTTP/1.1", host: "localhost:8080"
+2026/01/16 20:58:21 [error] 285#285: *2 directory index of "/app/www/public/" is forbidden, client: 192.168.65.1, server: _, request: "GET / HTTP/1.1", host: "localhost:8080"

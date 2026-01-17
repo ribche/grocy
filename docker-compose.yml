@@ -1,0 +1,17 @@
+services:
+  grocy:
+    image: lscr.io/linuxserver/grocy:latest
+    container_name: grocy-dev
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - TZ=Europe/Vienna
+    volumes:
+      # Odstranila bova povezavo s trenutno mapo (.), da vidiva če Grocy sploh dela samostojno
+      - grocy-config:/config
+    ports:
+      - "8080:80"
+    restart: unless-stopped
+
+volumes:
+  grocy-config:
